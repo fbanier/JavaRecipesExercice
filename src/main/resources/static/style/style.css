@@ -332,3 +332,9 @@ form.form .btn{
     display: block;
     margin : 25px auto;
 }
+form.form fieldset::after{
+    content: '';
+    background: transparent;
+    border: solid var(--dark);
+
+}

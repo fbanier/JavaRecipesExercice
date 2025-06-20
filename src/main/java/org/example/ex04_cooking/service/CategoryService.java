@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.UUID;
 
 @Service
-public class CategoryService implements ModelService<Category> {
+public class CategoryService implements Repository<Category> {
 
     private final Map<UUID, Category> categories;
 

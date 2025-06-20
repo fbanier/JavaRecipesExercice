@@ -3,15 +3,15 @@ package org.example.ex04_cooking.service;
 import java.util.List;
 import java.util.UUID;
 
-public interface ModelService<T> {
+public interface Repository<T> {
 
     List<T> findAll();
 
     T findById(UUID id);
 
-    T save(T model);
+    T save(T entity);
 
-    T update(T model);
+    T update(T entity);
 
-    boolean delete(T model);
+    boolean delete(T entity);
 }

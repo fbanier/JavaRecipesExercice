@@ -2,7 +2,6 @@ package org.example.ex04_cooking.controller;
 
 import jakarta.validation.Valid;
 import org.example.ex04_cooking.model.Category;
-import org.example.ex04_cooking.model.Recipe;
 import org.example.ex04_cooking.service.CategoryService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

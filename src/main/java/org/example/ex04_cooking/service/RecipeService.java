@@ -10,13 +10,13 @@ import java.util.Map;
 import java.util.UUID;
 
 @Service
-public class RecipeService implements ModelService<Recipe> {
+public class RecipeService implements Repository<Recipe> {
     private final Map<UUID, Recipe> recipes;
     private final CategoryService categoryService;
 
-    public RecipeService(){
+    public RecipeService(CategoryService categoryService){
         recipes = new HashMap<>();
-        categoryService = new CategoryService();
+        this.categoryService = categoryService;
 
         Recipe recipeA = Recipe.builder()
                 .id(UUID.randomUUID())
